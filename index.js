@@ -65,8 +65,11 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
+function is31Flavors(/*your code here*/originalFlavors); {
    /*your code here*/
+   console.log(is31Flavors.length);
+   var originalFlavors = 31;
+    Boolean(originalFlavors);
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
