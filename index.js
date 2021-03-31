@@ -45,11 +45,12 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(originalFlavors); {
-    console.log(originalFlavors);
+function copy(flavorArray) {
+    let flavorCopy = [...flavorArray]
+    return flavorCopy
 }    
 
-
+console.log(copy(["vanilla"]))
 
 
 
@@ -65,11 +66,8 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/originalFlavors); {
-   /*your code here*/
-   console.log(is31Flavors.length);
-   var originalFlavors = 31;
-    Boolean(originalFlavors);
+function is31Flavors(arr) {
+    return arr.length === 31 
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -85,8 +83,10 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(arr, newFlavor) {
+    arr.unshift(newFlavor)
+    console.log(newFlavor)
+    return arr
 }
 
 
